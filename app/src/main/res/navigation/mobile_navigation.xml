@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.atisapp.jazbeh.MainFragment.ui.home.HomeFragment"
+        android:label="داشبورد"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_free"
+        android:name="com.atisapp.jazbeh.MainFragment.ui.free.FreeFragment"
+        android:label="رایگان"
+        tools:layout="@layout/activity_free_products" />
+
+    <fragment
+        android:id="@+id/navigation_shop"
+        android:name="com.atisapp.jazbeh.MainFragment.ui.Shop.ShopFragment"
+        android:label="خریداری شده"
+        tools:layout="@layout/activity_shop" />
+
+    <fragment
+        android:id="@+id/navigation_jazbe_profile"
+        android:name="com.atisapp.jazbeh.MainFragment.ui.profile.ProfileFragment"
+        android:label="حساب کاربری"
+        tools:layout="@layout/activity_profile" />
+</navigation>

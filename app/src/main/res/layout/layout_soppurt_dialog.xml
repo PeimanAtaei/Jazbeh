@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_fileName="15388-chat-communication-animation.json"
+                />
+
+            <TextView
+                android:id="@+id/support_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="در صورت برخورد با هرگونه مشکل در نرم افزار با بخش پشتیبانی فنی مکاتبه نمایید و در صورت نیاز به کسب اطلاعات درباره محصولات با کارشناسان جذبه تماس حاصل نمایید"
+                android:textColor="@color/text_color2"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_larg"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                />
+
+            <Button
+                android:id="@+id/support_atis_btn"
+                android:layout_below="@id/balancesButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_botton"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:textColor="@android:color/white"
+                android:text="تماس با پشتیبانی فنی از طریق تلگرام"
+                android:textSize="@dimen/text_size_normal"
+                />
+
+            <Button
+                android:id="@+id/support_jazbe_btn"
+                android:layout_below="@id/balancesButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_botton"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:textColor="@android:color/white"
+                android:text="تماس با کارشناسان جذبه از طریق تلگرام"
+                android:textSize="@dimen/text_size_normal"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

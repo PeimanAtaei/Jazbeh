@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetPassword.PhoneActivity"
+    android:background="@drawable/bg1"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    android:focusableInTouchMode="true"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_larg"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/login_logo"
+        />
+
+    <EditText
+        android:id="@+id/forget_phone_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/selector_input"
+        android:gravity="center"
+        android:hint="@string/activity_forget_phone"
+        android:inputType="number"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:textColor="@color/text_color2"
+        android:textColorHint="@color/hint_color"
+        android:textSize="15sp" />
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/forget_phone_edit_text"
+        android:text="@string/activity_forget_title1"
+        android:textColor="@color/text_color2"
+        android:gravity="center"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_alignRight="@id/forget_phone_edit_text"
+        android:layout_alignLeft="@id/forget_phone_edit_text"
+        />
+
+    <Button
+        android:id="@+id/forget_next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/selector_botton"
+        android:text="@string/activity_login_next_btn"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_larg"
+        />
+
+    <TextView
+        android:id="@+id/phone_support_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_support_account"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_above="@+id/forget_next_btn"
+        />
+
+
+</RelativeLayout>

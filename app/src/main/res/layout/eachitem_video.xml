@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/video_list_each_item_box"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/eachItem_video_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/playimage"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/eachItem_video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="video title"
+                android:gravity="right"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <TextView
+                android:id="@+id/eachItem_video_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="video description"
+                android:gravity="right"
+                android:textColor="@color/hint_color"
+                android:textSize="@dimen/text_size_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:layout_marginBottom="@dimen/margin_small"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:ellipsize="end"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

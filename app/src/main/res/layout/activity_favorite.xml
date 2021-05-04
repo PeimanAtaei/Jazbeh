@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favorite.FavoriteActivity"
+    android:layoutDirection="ltr"
+    android:textDirection="rtl"
+    android:background="@drawable/bg1"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/favorite_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:theme="@style/AppTheme.Toolbar"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="محصولات مورد علاقه"
+            android:textSize="@dimen/text_size_larg"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/favorite_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabRippleColor="@color/colorAccent"
+        app:tabTextColor="@color/hint_color"
+        app:tabSelectedTextColor="@color/text_color2"
+        android:layout_below="@+id/favorite_toolBar"
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/favorite_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/favorite_tabs"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/favorite_empty_list_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:orientation="vertical"-->
+<!--        android:gravity="center"-->
+<!--        android:visibility="gone"-->
+<!--        >-->
+
+<!--        <com.airbnb.lottie.LottieAnimationView-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="120dp"-->
+<!--            app:lottie_autoPlay="true"-->
+<!--            app:lottie_loop="true"-->
+<!--            app:lottie_fileName="search-empty.json" />-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:padding="@dimen/margin_small"-->
+<!--            android:text="موردی یافت نشد!!!"-->
+<!--            android:textColor="@color/text_color2"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/favorite_activity_recyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:divider="@null"-->
+<!--        android:dividerHeight="0dp"-->
+<!--        android:layout_below="@id/favorite_toolBar"-->
+<!--        />-->
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="خانه" />
+
+    <item
+        android:id="@+id/navigation_free"
+        android:icon="@drawable/ic_attach_money_black_24dp"
+        android:title="رایگان" />
+
+    <item
+        android:id="@+id/navigation_shop"
+        android:icon="@drawable/ic_shopping_basket"
+        android:title="خریداری شده" />
+
+    <item
+        android:id="@+id/navigation_jazbe_profile"
+        android:icon="@drawable/ic_face_black2"
+        android:title="حساب کاربری" />
+
+
+
+
+
+</menu>

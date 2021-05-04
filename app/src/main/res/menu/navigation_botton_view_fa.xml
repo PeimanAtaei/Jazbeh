@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+
+        <item
+            android:id="@+id/navigation_favorite"
+            android:icon="@drawable/ic_archive"
+            android:title="علاقمندی ها"
+            android:orderInCategory="2"
+            />
+        <item
+            android:id="@+id/navigation_free"
+            android:icon="@drawable/ic_local_atm_"
+            android:title="رایگان"
+            android:orderInCategory="1"
+            />
+        <item
+            android:id="@+id/navigation_shop"
+            android:icon="@drawable/ic_shopping_basket"
+            android:title="خریداری شده"
+            android:orderInCategory="3"
+            />
+        <item
+            android:id="@+id/navigation_profile"
+            android:icon="@drawable/ic_face_black2"
+            android:title="حساب کاربری"
+            android:orderInCategory="4"
+            />
+    </group>
+
+
+
+
+</menu>

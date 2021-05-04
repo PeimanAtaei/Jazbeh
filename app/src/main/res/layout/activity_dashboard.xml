@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dashboard_draw"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment.HomeActivity"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionGroup="true">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/layout_dashboard_view_pager"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </RelativeLayout>
+
+<!--        <include layout="@layout/layout_bottm_navigation"/>-->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/dashboard_float_action_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabSize="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:src="@drawable/operator2"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/dashboard_wallet_float_action_btn"
+            android:layout_width="77dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginBottom="14dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_local_atm_black" />
+
+        <!--<LinearLayout-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/colorPrimaryDark_trans"-->
+            <!--&gt;-->
+
+            <!--<LinearLayout-->
+
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/main_bottom_home"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/ic_home_black2"/>-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/main_bottom_shop"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/ic_shopping_basket"/>-->
+
+            <!--</LinearLayout>-->
+            <!--<LinearLayout-->
+
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/main_bottom_account"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.5"-->
+                <!--android:gravity="center">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="30dp"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:src="@drawable/ic_face_black"/>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/dashbord_navigation"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        app:menu="@menu/navigation_menu"
+        app:headerLayout="@layout/navigation_header"
+        app:itemTextColor="@android:color/white"
+        android:theme="@style/navigation_view"
+        android:background="@color/black_trans"
+        app:itemIconTint="@color/colorAccent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Design By AtisApp"
+            android:layout_gravity="center|bottom"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="@dimen/margin_normal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="www.atisapp.com"
+            android:layout_gravity="center|bottom"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            />
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

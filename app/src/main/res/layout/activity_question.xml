@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Questionnaire.QuestionActivity"
+    android:background="@drawable/bg1"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/header1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_larg"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/title"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/login_logo"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/question_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_larg"
+        android:layout_marginRight="@dimen/margin_larg"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_normal"
+
+            >
+
+            <CheckBox
+                android:id="@+id/file_check_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شما کمتر از 15 سال سن دارید ؟"
+                android:textColor="@color/text_color2"
+                android:buttonTint="@color/colorAccent"
+                />
+            <CheckBox
+                android:id="@+id/file_check_heartDisease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شما سابقه حملات قلبی دارید"
+                android:textColor="@color/text_color2"
+                android:buttonTint="@color/colorAccent"
+                />
+            <CheckBox
+                android:id="@+id/file_check_epilepsy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شما سابقه بیماری صرع دارید"
+                android:textColor="@color/text_color2"
+                android:buttonTint="@color/colorAccent"
+                />
+            <CheckBox
+                android:id="@+id/file_check_hysteria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شما سابقه ای از هیستری دارید"
+                android:textColor="@color/text_color2"
+                android:buttonTint="@color/colorAccent"
+                />
+            <CheckBox
+                android:id="@+id/file_check_bipolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شما دچار اختلال دوقطبی هستین"
+                android:textColor="@color/text_color2"
+                android:buttonTint="@color/colorAccent"
+                />
+            <CheckBox
+                android:id="@+id/file_check_hearing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شما مشکل شنوایی دارید"
+                android:textColor="@color/text_color2"
+                android:buttonTint="@color/colorAccent"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/file_check_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/question_box"
+        android:text="در صورت وجود هر یک از مشکلات زیر آن گزینه را تیک بزنید"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        />
+
+    <Button
+        android:id="@+id/file_check_finish_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/selector_botton"
+        android:text="@string/activity_login_next_btn"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_larg"
+        />
+
+</RelativeLayout>

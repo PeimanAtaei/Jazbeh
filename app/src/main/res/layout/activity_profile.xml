@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:textDirection="rtl"
+    android:background="@drawable/bg1"
+    android:focusableInTouchMode="true"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_small">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_larg">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_header_cardView"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/header7"
+                        android:adjustViewBounds="true"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/avatar_image"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/avatar"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="#FF000000"
+                        android:visibility="visible"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginRight="@dimen/margin_larg"
+                        android:layout_marginLeft="@dimen/margin_larg"
+                        android:layout_below="@id/avatar_image"
+
+                        >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <TextView
+                                android:id="@+id/profile_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="در حال دریافت اطلاعات"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/text_size_big"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/margin_normal"
+                                android:visibility="visible"
+                                />
+
+
+                            <TextView
+                                android:id="@+id/profile_phone_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="در حال دریافت اطلاعات"
+                                android:textColor="@color/text_color2"
+                                android:textSize="@dimen/text_size_larg"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                />
+
+
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/hint_color"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+
+                                <LinearLayout
+                                    android:id="@+id/profile_wallet_charge_btn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:paddingTop="@dimen/margin_small"
+                                    android:paddingBottom="@dimen/margin_small"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/ic_credit_card"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="شارژ کیف پول"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:gravity="center"/>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/hint_color"/>
+
+                                <LinearLayout
+                                    android:id="@+id/profile_database_btn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:paddingTop="@dimen/margin_small"
+                                    android:paddingBottom="@dimen/margin_small"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/ic_folder"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="محصولات ذخیره شده"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:gravity="center"/>
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/hint_color"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                >
+                                <LinearLayout
+                                    android:id="@+id/profile_password_update_btn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:paddingTop="@dimen/margin_small"
+                                    android:paddingBottom="@dimen/margin_small"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/ic_password"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="تغییر رمز عبور"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:gravity="center"/>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/hint_color"/>
+
+                                <LinearLayout
+                                    android:id="@+id/profile_favorite_btn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:paddingTop="@dimen/margin_small"
+                                    android:paddingBottom="@dimen/margin_small"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/ic_archive"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="علاقمندی ها"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:gravity="center"/>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="1dp"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/hint_color"/>
+
+                                <LinearLayout
+                                    android:id="@+id/profile_file_update_btn"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:paddingTop="@dimen/margin_small"
+                                    android:paddingBottom="@dimen/margin_small"
+                                    >
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@drawable/ic_file"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="اصلاح پرونده"
+                                        android:textSize="@dimen/text_size_small"
+                                        android:gravity="center"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@id/profile_header_cardView"
+                    >
+
+                    <TextView
+                        android:id="@+id/profile_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/margin_normal"
+                        android:visibility="gone"
+                        />
+
+
+                    <EditText
+                            android:id="@+id/profile_name_edit_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/selector_input"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:hint="نام و نام خانوادگی"
+                            android:gravity="center"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="15sp"
+                            android:inputType="textPersonName"
+                            android:maxLength="20"
+                            android:maxLines="1"
+                            android:layout_marginTop="@dimen/margin_larg"
+                            />
+
+                    <EditText
+                        android:id="@+id/profile_age_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_input"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:hint="سن"
+                        android:gravity="center"
+                        android:textColor="@color/hint_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="15sp"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:maxLines="1"
+                        android:layout_below="@id/personal_city_edit_text"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+                    <EditText
+                        android:id="@+id/profile_invitation_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_input"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:hint="کد معرف"
+                        android:gravity="center"
+                        android:textColor="@color/hint_color"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="15sp"
+                        android:inputType="number"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:layout_below="@id/personal_city_edit_text"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <EditText
+                            android:id="@+id/profile_location_edit"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/selector_input"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:hint="محل سکونت"
+                            android:gravity="center"
+                            android:textColor="@color/hint_color"
+                            android:textColorHint="@color/hint_color"
+                            android:textSize="15sp"
+                            android:inputType="textMultiLine"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:paddingRight="@dimen/margin_larg"
+                            android:paddingLeft="@dimen/margin_larg"
+                            />
+
+                        <ImageView
+                            android:id="@+id/profile_location_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_baseline_edit_location"
+                            android:layout_alignRight="@id/profile_location_edit"
+                            android:layout_alignBottom="@id/profile_location_edit"
+                            android:layout_alignTop="@id/profile_location_edit"
+                            android:layout_marginRight="@dimen/margin_small"/>
+
+
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                        android:id="@+id/profile_balance_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/selector_input"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:text="شارژ کیف پول شما : 0 هزار تومان"
+                        android:gravity="center"
+                        android:textColor="@color/text_color2"
+                        android:textColorHint="@color/hint_color"
+                        android:textSize="15sp"
+                        android:layout_marginTop="@dimen/margin_small"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:visibility="gone"
+                        >
+
+                        <Button
+                            android:id="@+id/profile_fa_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/selector_input_selected"
+                            android:text="فارسی"
+                            android:textColor="@android:color/white"
+                            />
+
+                        <Button
+                            android:id="@+id/profile_en_btn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/selector_input"
+                            android:text="English"
+                            android:textColor="@android:color/white"
+                            android:layout_marginRight="@dimen/margin_small"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/profile_save_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/selector_botton"
+                    android:layout_marginTop="@dimen/margin_larg"
+                    android:text="ذخیره تغییرات"
+                    android:textColor="@android:color/white"
+                    android:layout_alignParentBottom="true"
+                    />
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

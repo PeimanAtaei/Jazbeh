@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Delegate.FormActivity"
+    android:background="@drawable/bg1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/form_activity_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:theme="@style/AppTheme.Toolbar"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="فرم مشارکت در فروش"
+            android:textSize="@dimen/text_size_larg"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_normal"
+            android:elevation="@dimen/margin_small"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:focusableInTouchMode="true"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/deligateheader"
+                    android:adjustViewBounds="true"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delegate_form_title"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_size_larg"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delegate_form_explain"
+                    android:gravity="center"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+                <EditText
+                    android:id="@+id/delegate_form_fullName_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/selector_input"
+                    android:gravity="center"
+                    android:hint="@string/delegate_form_name_hint"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color2"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    />
+
+                <EditText
+                    android:id="@+id/delegate_form_city_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/selector_input"
+                    android:gravity="center"
+                    android:hint="@string/delegate_form_city_hint"
+                    android:inputType="textPersonName"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color2"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    />
+
+                <EditText
+                    android:id="@+id/delegate_form_education_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/selector_input"
+                    android:gravity="center"
+                    android:hint="@string/delegate_form_education_hint"
+                    android:inputType="textPersonName"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color2"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    />
+
+                <EditText
+                    android:id="@+id/delegate_form_card_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/selector_input"
+                    android:gravity="center"
+                    android:hint="@string/delegate_form_card_hint"
+                    android:inputType="number"
+                    android:maxLength="40"
+                    android:maxLines="1"
+                    android:textColor="@color/text_color2"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    />
+
+                <EditText
+                    android:id="@+id/delegate_form_channel_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:paddingTop="@dimen/margin_normal"
+                    android:paddingBottom="@dimen/margin_normal"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:paddingRight="@dimen/margin_small"
+                    android:background="@drawable/selector_input"
+                    android:gravity="center"
+                    android:hint="@string/delegate_form_channel_hint"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/text_color2"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    />
+
+                <Button
+                    android:id="@+id/delegate_form_rules_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/selector_download_botton"
+                    android:text="@string/delegate_form_rules_btn"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    />
+
+                <Button
+                    android:id="@+id/delegate_form_send_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@drawable/selector_botton"
+                    android:text="@string/delegate_form_send_btn"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    android:layout_marginBottom="@dimen/margin_larg"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>

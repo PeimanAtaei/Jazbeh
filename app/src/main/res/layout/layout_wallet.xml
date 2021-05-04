@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_fileName="9704-ecommerce.json"
+                />
+
+            <TextView
+                android:id="@+id/balanceLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اعتبار فعلی شما : 2,000 تومان"
+                android:textColor="@color/text_color2"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_larg" />
+
+            <EditText
+                android:id="@+id/balanceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textColor="@color/text_color2"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_below="@id/balanceLabel"
+                android:background="@drawable/selector_input"
+                android:gravity="center"
+                android:hint="مقدار اعتبار را وارد کنید"
+                android:inputType="number"
+                />
+
+            <LinearLayout
+                android:id="@+id/balancesButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/balanceEditText"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:weightSum="3"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal">
+
+                <Button
+                    android:id="@+id/chargeButtonOne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/selector_botton"
+                    android:text="@string/wallet_charge_1"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/chargeButtonTwo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:background="@drawable/selector_botton"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:text="@string/wallet_charge_2"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/chargeButtonThree"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_botton"
+                    android:text="@string/wallet_charge_3"
+                    android:textColor="@android:color/white"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/balanceChargeButton"
+                android:layout_below="@id/balancesButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_botton"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:textColor="@android:color/white"
+                android:text="@string/wallet_charge_title"
+                android:textSize="@dimen/text_size_normal"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

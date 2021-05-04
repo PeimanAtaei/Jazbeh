@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_normal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/course_card_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/header5"
+                    android:adjustViewBounds="true"/>
+                <TextView
+                    android:id="@+id/course_card_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/course_card_header"
+                    android:text="سلام دوست عزیز"
+                    android:gravity="center"
+                    android:textSize="@dimen/text_size_big"
+                    android:textColor="@color/text_color"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sharing_explain2"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/text_color2"
+                android:gravity="right"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sharing_explain3"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/colorAccent"
+                android:gravity="right"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sharing_explain4"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/text_color2"
+                android:gravity="right"
+                android:drawableRight="@drawable/ic_check"
+                android:drawableTint="@color/colorAccent"
+                android:drawablePadding="@dimen/margin_small"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sharing_explain5"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/text_color2"
+                android:gravity="right"
+                android:drawableRight="@drawable/ic_check"
+                android:drawableTint="@color/colorAccent"
+                android:drawablePadding="@dimen/margin_small"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sharing_explain6"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/text_color2"
+                android:gravity="right"
+                android:drawableRight="@drawable/ic_check"
+                android:drawableTint="@color/colorAccent"
+                android:drawablePadding="@dimen/margin_small"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="لینک دعوت شما"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/margin_small"
+                android:paddingLeft="@dimen/margin_small"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:background="@drawable/selector_share_text"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                >
+                <Button
+                    android:id="@+id/share_detail_copy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/colorAccent"
+                    android:text="کپی کردن"
+                    android:paddingRight="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textSize="@dimen/text_size_normal"
+                    android:layout_marginRight="@dimen/margin_small"/>
+                <TextView
+                    android:id="@+id/share_detail_link"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:textIsSelectable="true"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:paddingRight="@dimen/margin_small"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.information.InformationFragment"
+    android:background="@drawable/bg1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اطلاعات نماینده"
+                android:textColor="@color/colorAccentBlue"
+                android:padding="@dimen/margin_small"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:textSize="@dimen/text_size_big"
+                android:background="@android:color/white"
+                />
+
+            <EditText
+                android:id="@+id/delegate_info_fullName_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/selector_input"
+                android:gravity="center"
+                android:hint="@string/delegate_form_name_hint"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:maxLines="1"
+                android:textColor="@color/text_color2"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/text_size_normal"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <EditText
+                    android:id="@+id/delegate_info_city_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selector_input"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:hint="محل سکونت"
+                    android:gravity="center"
+                    android:textColor="@color/hint_color"
+                    android:textColorHint="@color/hint_color"
+                    android:textSize="15sp"
+                    android:inputType="textMultiLine"
+                    android:layout_marginTop="@dimen/text_size_normal"
+                    android:paddingRight="@dimen/margin_larg"
+                    android:paddingLeft="@dimen/margin_larg"
+                    />
+
+                <ImageView
+                    android:id="@+id/information_location_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_edit_location"
+                    android:layout_alignRight="@id/delegate_info_city_edit"
+                    android:layout_alignBottom="@id/delegate_info_city_edit"
+                    android:layout_alignTop="@id/delegate_info_city_edit"
+                    android:layout_marginRight="@dimen/margin_small"/>
+
+
+            </RelativeLayout>
+<!--            <EditText-->
+<!--                android:id="@+id/delegate_info_city_edit"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_marginLeft="50dp"-->
+<!--                android:layout_marginRight="50dp"-->
+<!--                android:background="@drawable/selector_input"-->
+<!--                android:gravity="center"-->
+<!--                android:hint="@string/delegate_form_city_hint"-->
+<!--                android:inputType="textPersonName"-->
+<!--                android:maxLength="30"-->
+<!--                android:maxLines="1"-->
+<!--                android:textColor="@color/text_color2"-->
+<!--                android:textColorHint="@color/hint_color"-->
+<!--                android:textSize="15sp"-->
+<!--                android:layout_marginTop="@dimen/text_size_normal"-->
+<!--                />-->
+
+            <EditText
+                android:id="@+id/delegate_info_education_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/selector_input"
+                android:gravity="center"
+                android:hint="@string/delegate_form_education_hint"
+                android:inputType="textPersonName"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:textColor="@color/text_color2"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/text_size_normal"
+                />
+
+            <EditText
+                android:id="@+id/delegate_info_card_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/selector_input"
+                android:gravity="center"
+                android:hint="@string/delegate_form_card_hint"
+                android:inputType="textPersonName"
+                android:maxLength="40"
+                android:maxLines="1"
+                android:textColor="@color/text_color2"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/text_size_normal"
+                />
+
+            <EditText
+                android:id="@+id/delegate_info_channel_edit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/selector_input"
+                android:gravity="center"
+                android:hint="@string/delegate_form_channel_hint"
+                android:inputType="textMultiLine"
+                android:textColor="@color/text_color2"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:layout_marginTop="@dimen/text_size_normal"
+                />
+
+            <Button
+                android:id="@+id/delegate_info_rules_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/selector_download_botton"
+                android:text="@string/delegate_form_rules_btn"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/text_size_normal"
+                />
+
+            <Button
+                android:id="@+id/delegate_info_send_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="@dimen/text_size_normal"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="@dimen/margin_larg"
+                android:background="@drawable/selector_botton"
+                android:text="@string/delegate_info_send_btn"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

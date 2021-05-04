@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/commentBox"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_small"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/comment_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:text="کاربر"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_larg"
+                />
+            <TextView
+                android:id="@+id/comment_user_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|right"
+                android:text="نظر کاربران نرم افزار جذبه"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size_larg"
+                />
+            <LinearLayout
+                android:id="@+id/comment_admin_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/comment_admin_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+                    android:text="مدیر"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_larg"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    />
+                <TextView
+                    android:id="@+id/comment_admin_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+                    android:text="پاسخ مدیر به نظر کاربران در این بخش قرار داده می شود"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_larg"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_normal"
+                >
+
+                <TextView
+                    android:id="@+id/comment_card_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5 روز پیش"
+                    android:paddingLeft="@dimen/margin_small"
+                    android:paddingRight="@dimen/margin_small"
+                    android:gravity="center|left"
+                    />
+                <LinearLayout
+                    android:id="@+id/comment_card_like_box"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/comment_card_like"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right"
+                        android:padding="4dp"
+                        android:textSize="@dimen/text_size_small"
+                        android:text="0"
+                        android:textColor="@color/hint_color"/>
+                    <ImageView
+                        android:id="@+id/comment_card_like_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_favorite_border"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

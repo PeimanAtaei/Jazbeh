@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicPlayer.MusicPlayerActivity"
+    android:textDirection="rtl"
+    android:layoutDirection="ltr"
+    android:background="@drawable/bg1"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/music_player_list_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:theme="@style/AppTheme.Toolbar"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اطلاعات محصول"
+            android:textSize="@dimen/text_size_larg"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/music_player_list_toolBar"
+        android:transitionGroup="true"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/margin_normal"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="ltr"
+                    android:textDirection="ltr"
+                    >
+
+                    <ImageView
+                        android:id="@+id/play_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/header3"
+                        android:adjustViewBounds="true"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logo"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignBottom="@id/play_header"
+                        android:padding="@dimen/margin_normal"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="در حال دریافت اطلاعات"
+                        android:textColor="@color/text_color"
+                        android:layout_below="@id/play_header"
+                        android:textSize="@dimen/text_size_big"
+                        android:gravity="center"
+                        />
+
+                    <SeekBar
+                        android:id="@+id/music_seek_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_normal"
+                        android:layout_below="@id/music_title"
+                        />
+
+
+
+                    <TextView
+                        android:id="@+id/music_play_mode_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="center"
+                        android:layout_below="@id/music_seek_bar"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/music_play_btn"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/selector_play_botton"
+                        app:srcCompat="@drawable/ic_play_arrow"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/music_play_mode_text"
+                        android:layout_margin="@dimen/margin_normal"
+                        />
+
+                    <ProgressBar
+
+                        android:id="@+id/music_play_progress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/music_play_btn"
+                        android:layout_alignTop="@id/music_play_btn"
+                        android:layout_alignBottom="@id/music_play_btn"
+                        android:layout_alignRight="@id/music_play_btn"
+                        android:visibility="gone"
+                        />
+
+
+
+
+
+                    <ImageButton
+                        android:id="@+id/repet_btn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_autorenew"
+                        android:background="@drawable/selector_play_botton"
+                        android:layout_toLeftOf="@id/music_play_btn"
+                        android:layout_alignTop="@id/music_play_btn"
+                        android:layout_marginRight="-10dp"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/stop_btn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/ic_sto"
+                        android:background="@drawable/selector_play_botton"
+                        android:layout_toRightOf="@id/music_play_btn"
+                        android:layout_alignTop="@id/music_play_btn"
+                        android:layout_marginLeft="-10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_repet_counter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="تکرار"
+                        android:textColor="@color/text_color"
+                        android:layout_toLeftOf="@id/repet_btn"
+                        android:layout_below="@id/music_seek_bar"
+                        android:layout_alignTop="@id/repet_btn"
+                        android:layout_alignBottom="@id/repet_btn"
+                        android:gravity="center"
+                        android:layout_marginRight="@dimen/margin_small"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_timer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="00:00"
+                        android:textColor="@color/text_color"
+                        android:layout_toRightOf="@id/stop_btn"
+                        android:layout_alignTop="@id/stop_btn"
+                        android:layout_alignBottom="@id/stop_btn"
+                        android:layout_marginLeft="@dimen/margin_small"
+                        android:gravity="center"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/music_activity_reaction_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/margin_normal"
+                        android:paddingRight="@dimen/margin_normal"
+                        android:paddingBottom="@dimen/margin_normal"
+                        android:layout_below="@id/music_play_btn"
+                        >
+                        <LinearLayout
+                            android:id="@+id/episode_card_favorite"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/episode_card_favorite_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:padding="4dp"
+                                android:textSize="@dimen/text_size_small"
+                                android:text="علاقمندی"
+                                android:textColor="@color/hint_color"/>
+                            <ImageView
+                                android:id="@+id/episode_card_favorite_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_unarchive"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/episode_card_comment"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/episode_card_comment_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:padding="4dp"
+                                android:textSize="@dimen/text_size_small"
+                                android:text="0 نظر"
+                                android:textDirection="rtl"
+                                android:textColor="@color/hint_color"/>
+                            <ImageView
+                                android:id="@+id/episode_card_comments_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_comment"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/episode_card_like"
+
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/episode_card_like_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:padding="4dp"
+                                android:textSize="@dimen/text_size_small"
+                                android:text="124"
+                                android:textColor="@color/hint_color"/>
+                            <ImageView
+                                android:id="@+id/episode_card_like_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_favorite_border"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/episode_card_play_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:padding="4dp"
+                                android:textSize="@dimen/text_size_small"
+
+                                android:text="124"
+                                android:textColor="@color/hint_color"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_play"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:orientation="horizontal"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/episode_card_view_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center|right"
+                                android:padding="4dp"
+                                android:textSize="@dimen/text_size_small"
+                                android:text="124"
+                                android:textColor="@color/hint_color"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_view"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/music_palyer_pay_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_botton"
+                        android:text="دریافت محصول"
+                        android:textColor="@android:color/white"
+                        android:layout_below="@id/music_activity_reaction_box"
+                        android:layout_margin="@dimen/margin_small"
+                        android:visibility="visible"
+                        />
+                    <Button
+                        android:id="@+id/music_palyer_download_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector_download_botton"
+                        android:text="ذخیره محصول"
+                        android:textColor="@android:color/white"
+                        android:layout_below="@id/music_activity_reaction_box"
+                        android:layout_margin="@dimen/margin_small"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:elevation="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/music_product_name_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="نام محصول"
+                        android:gravity="right"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_margin="@dimen/margin_small"
+                        android:drawableRight="@drawable/ic_music_note"
+                        android:drawablePadding="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="در حال دریافت اطلاعات"
+                        android:gravity="right"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_product_price_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="قیمت محصول"
+                        android:gravity="right"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_margin="@dimen/margin_small"
+                        android:drawableRight="@drawable/ic_attach_money_black_24dp"
+                        android:drawablePadding="10dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/music_product_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="در حال دریافت اطلاعات"
+                        android:gravity="right"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginBottom="@dimen/margin_normal"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_product_package_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="قیمت پکیج"
+                        android:gravity="right"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_margin="@dimen/margin_small"
+                        android:drawableRight="@drawable/ic_attach_money_black_24dp"
+                        android:drawablePadding="10dp"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_package_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:gravity="right"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_size_small"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginBottom="@dimen/margin_normal"
+                        android:visibility="gone"
+                        />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="15dp"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_small"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    >
+                    <TextView
+                        android:id="@+id/music_product_description_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="شرح عملکرد فایل"
+                        android:gravity="right"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_margin="@dimen/margin_small"
+                        android:drawableRight="@drawable/ic_web"
+                        android:drawablePadding="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/music_product_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="در حال دریافت اطلاعات"
+                        android:gravity="right"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/text_size_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginBottom="@dimen/margin_normal"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="15dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/music_product_use_way_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نحوه استفاده"
+                android:gravity="right"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_margin="@dimen/margin_small"
+                android:drawableRight="@drawable/ic_build_black_24dp"
+                android:drawablePadding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/music_product_use_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="در حال دریافت اطلاعات"
+                android:gravity="right"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                />
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="15dp"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_small"
+
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/music_product_alarm_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="توجه"
+                android:gravity="right"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size_normal"
+                android:drawableRight="@drawable/ic_error"
+                android:layout_margin="@dimen/margin_small"
+                android:drawablePadding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/music_product_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="در حال دریافت اطلاعات"
+                android:gravity="right"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                />
+
+            <TextView
+                android:id="@+id/music_product_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مدت زمان فایل : ۱ ساعت"
+                android:gravity="right"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size_normal"
+                android:layout_margin="@dimen/margin_small"
+                android:drawableRight="@drawable/ic_timelapse"
+                android:drawablePadding="10dp"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/music_player_file_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_botton"
+                android:text="فایل های محصول"
+                android:textColor="@android:color/white"
+                android:layout_margin="@dimen/margin_small"
+                android:visibility="visible"
+                />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        >
+
+        <RelativeLayout
+            android:id="@+id/test_list_each_item_box"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            >
+
+            <ImageView
+                android:id="@+id/test_list_each_item_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/test"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                />
+
+            <ImageView
+                android:id="@+id/test_list_each_item_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+                android:layout_toLeftOf="@id/test_list_each_item_img"
+                android:layout_marginRight="@dimen/margin_larg"
+                android:layout_marginLeft="30dp"
+                android:layout_centerInParent="true"
+                />
+
+            <TextView
+                android:id="@+id/test_list_each_item_name_en"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="در حال دریافت اطلاعات"
+                android:textColor="@color/text_color2"
+                android:textSize="16sp"
+                android:layout_above="@id/test_list_each_item_line"
+                android:layout_toLeftOf="@id/test_list_each_item_img"
+                android:layout_marginRight="@dimen/margin_larg"
+                android:layout_marginLeft="@dimen/margin_larg"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_small"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <TextView
+                android:id="@+id/test_list_each_item_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 سوال"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                android:layout_below="@id/test_list_each_item_line"
+                android:layout_toLeftOf="@id/test_list_each_item_img"
+                android:layout_marginRight="@dimen/margin_larg"
+                android:drawableRight="@drawable/ic_check"
+                android:drawablePadding="@dimen/margin_small"
+                android:layout_marginTop="@dimen/margin_normal"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

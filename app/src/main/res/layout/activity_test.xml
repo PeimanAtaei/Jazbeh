@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:textDirection="rtl"
+    android:background="@drawable/bg1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/test_list_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:theme="@style/AppTheme.Toolbar"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تست روانشناسی"
+            android:textSize="@dimen/text_size_larg"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/test_list_toolBar"
+        android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/test_detail_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:elevation="15dp"
+                android:visibility="visible"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/test_start_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/test_card_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/resultheader"
+                            android:adjustViewBounds="true"/>
+                        <TextView
+                            android:id="@+id/test_card_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="در حال دریافت اطلاعات"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_big"
+                            android:textColor="@android:color/white"/>
+                    </RelativeLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/test_start_header"
+                        android:layout_above="@+id/test_card_start_btn"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="توضیحات :"
+                                android:textColor="@color/hint_color"
+                                android:drawableRight="@drawable/ic_done"
+                                android:drawablePadding="@dimen/margin_small"
+                                android:textSize="@dimen/text_size_normal"
+                                android:layout_marginRight="@dimen/margin_small"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:maxLines="2"
+                                android:ellipsize="end"
+                                />
+                            <TextView
+                                android:id="@+id/test_card_description"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="در حال دریافت اطلاعات"
+                                android:textColor="@color/text_color2"
+                                android:textSize="@dimen/text_size_larg"
+                                android:layout_marginRight="@dimen/margin_larg"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:ellipsize="end"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="تعداد سوالات آزمون :"
+                                android:drawableRight="@drawable/ic_done"
+                                android:drawablePadding="@dimen/margin_small"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textColor="@color/hint_color"
+                                android:layout_marginRight="@dimen/margin_small"
+                                android:layout_marginLeft="@dimen/margin_small"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/test_card_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="در حال دریافت اطلاعات"
+                                android:textSize="@dimen/text_size_larg"
+                                android:textColor="@color/text_color2"
+                                android:layout_marginRight="@dimen/margin_larg"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="right"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="تعداد دفعات انجام این آزمون توسط کاربران :"
+                                android:drawableRight="@drawable/ic_done"
+                                android:drawablePadding="@dimen/margin_small"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textColor="@color/hint_color"
+                                android:layout_marginRight="@dimen/margin_small"
+                                android:layout_marginLeft="@dimen/margin_small"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/test_card_view_count"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="در حال دریافت اطلاعات"
+                                android:textSize="@dimen/text_size_larg"
+                                android:textColor="@color/text_color2"
+                                android:layout_marginRight="@dimen/margin_larg"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="right"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="نوع آزمون :"
+                                android:drawableRight="@drawable/ic_done"
+                                android:drawablePadding="@dimen/margin_small"
+                                android:textSize="@dimen/text_size_normal"
+                                android:textColor="@color/hint_color"
+                                android:layout_marginRight="@dimen/margin_small"
+                                android:layout_marginLeft="@dimen/margin_small"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/test_card_time"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="آزمون روانشناسی"
+                                android:textSize="@dimen/text_size_larg"
+                                android:textColor="@color/text_color2"
+                                android:layout_marginRight="@dimen/margin_larg"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:gravity="right"
+
+                                />
+
+
+                        </LinearLayout>
+                    </ScrollView>
+
+
+
+                    <Button
+                        android:id="@+id/test_card_start_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="@dimen/margin_normal"
+                        android:layout_marginRight="@dimen/margin_normal"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:background="@drawable/selector_download_botton"
+                        android:text="@string/activity_test_start_btn"
+                        android:textColor="@android:color/white"
+                        android:layout_marginBottom="@dimen/margin_normal"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/test_question_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_normal"
+                android:elevation="15dp"
+                android:visibility="gone"
+                >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/test_card_question_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:layout_centerInParent="true"
+                                android:text="سوال 1"
+                                android:gravity="center"
+                                android:textSize="@dimen/text_size_big"
+                                android:background="@drawable/questionheader"
+                                android:textColor="@android:color/white"/>
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/test_card_question_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="متن سوال "
+                            android:textColor="@color/hint_color"
+                            android:textSize="@dimen/text_size_larg"
+                            android:layout_marginRight="@dimen/margin_larg"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:layout_marginBottom="@dimen/margin_small"
+                            android:ellipsize="end"
+                            android:drawableRight="@drawable/ic_done"
+                            android:drawablePadding="@dimen/margin_small"
+                            android:visibility="gone"
+                            />
+                        <TextView
+                            android:id="@+id/test_card_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="در حال دریافت اطلاعات"
+                            android:textColor="@color/text_color2"
+                            android:textSize="@dimen/text_size_larg"
+                            android:layout_marginRight="@dimen/margin_larg"
+                            android:layout_marginLeft="@dimen/margin_small"
+                            android:layout_marginBottom="@dimen/margin_small"
+                            android:layout_marginTop="@dimen/margin_small"
+                            android:ellipsize="end"
+                            />
+
+
+                        <LinearLayout
+                            android:id="@+id/button_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:orientation="vertical"
+                            android:padding="@dimen/margin_small"
+                            >
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/test_result_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/margin_normal"
+                android:elevation="15dp"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/result_header_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/result_card_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/resultheader"
+                            android:adjustViewBounds="true"/>
+                        <TextView
+                            android:id="@+id/result_card_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="نتیجه آزمون"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_size_big"
+                            android:textColor="@android:color/white"/>
+                    </RelativeLayout>
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/result_header_image"
+                        android:layout_above="@+id/test_card_finish_btn"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/test_card_result"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="در حال دریافت اطلاعات"
+                                android:textColor="@color/text_color2"
+                                android:textSize="@dimen/text_size_larg"
+                                android:layout_marginRight="@dimen/margin_small"
+                                android:layout_marginLeft="@dimen/margin_small"
+                                android:layout_marginBottom="@dimen/margin_small"
+                                android:ellipsize="end"
+                                />
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <Button
+                        android:id="@+id/test_card_finish_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_margin="@dimen/margin_normal"
+                        android:background="@drawable/selector_download_botton"
+                        android:text="@string/activity_test_finish_btn"
+                        android:textColor="@android:color/white"
+                        android:layout_alignParentBottom="true"
+                        />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

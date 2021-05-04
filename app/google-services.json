@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "113105552027",
+    "firebase_url": "https://jazbe-5ff91.firebaseio.com",
+    "project_id": "jazbe-5ff91",
+    "storage_bucket": "jazbe-5ff91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:113105552027:android:69fd2564dfd1b2726dfc3e",
+        "android_client_info": {
+          "package_name": "com.atisapp.jazbeh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "113105552027-2i3bpe09s5bh1bc6ibmgjr3d5bkjcg2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atisapp.jazbeh",
+            "certificate_hash": "c4ef4469db4796ed9d374c805717dc533915757c"
+          }
+        },
+        {
+          "client_id": "113105552027-ndivv7t1nr0ehjdol37ass09nc0p7bd1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaQ-YpM-yHXqvBLoXK1lLkNn3slpFgAUU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "113105552027-ndivv7t1nr0ehjdol37ass09nc0p7bd1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

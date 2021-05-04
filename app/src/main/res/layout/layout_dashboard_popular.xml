@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    android:background="@drawable/redback"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redback"
+        android:orientation="horizontal"
+        >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="@dimen/margin_normal"
+                android:paddingTop="@dimen/margin_normal"
+                android:paddingBottom="@dimen/margin_normal"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/dashboard_popular_title"
+                    android:orientation="vertical"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/populartitle"
+                        android:scaleType="fitStart"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_larg"
+                        android:text="محبوب ترین ها"
+                        android:textColor="@color/text_color2"
+                        android:layout_alignParentBottom="true"
+
+                        />
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/dashboard_popular_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:orientation="horizontal"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    />
+
+            </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

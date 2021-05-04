@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/delegate_navigation"
+    app:startDestination="@+id/navigation_balance">
+
+    <fragment
+        android:id="@+id/navigation_balance"
+        android:name="com.atisapp.jazbeh.Delegate.ui.balance.BalanceFragment"
+        android:label="@string/title_balance"
+        tools:layout="@layout/fragment_balance" />
+
+    <fragment
+        android:id="@+id/navigation_sell"
+        android:name="com.atisapp.jazbeh.Delegate.ui.sell.SellFragment"
+        android:label="@string/title_sell"
+        tools:layout="@layout/fragment_sell" />
+
+    <fragment
+        android:id="@+id/navigation_information"
+        android:name="com.atisapp.jazbeh.Delegate.ui.information.InformationFragment"
+        android:label="@string/title_information"
+        tools:layout="@layout/fragment_information" />
+</navigation>

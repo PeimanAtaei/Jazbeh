@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textDirection="rtl"
+    android:layoutDirection="ltr">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/update_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="درخواست مشارکت در فروش"
+                android:padding="@dimen/margin_small"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_larg"
+                android:background="@color/colorAccent"
+                />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="فرم مشارکت در فروش با موفقیت در سیستم ثبت گردید . نهایتا تا یک روز کاری فرم شما بررسی شده و در درصورت نبود مشکل حساب نمایندگی شما فعال می گردد . لطفا یک روز بعد از ارسال این فرم دوباره با مراجعه به این بخش وارد پنل نمایندگی خود شوید"
+              android:textColor="@color/text_color2"
+              android:gravity="center"
+              android:layout_marginRight="@dimen/margin_normal"
+              android:layout_marginLeft="@dimen/margin_normal"
+              android:layout_marginTop="@dimen/margin_normal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="@dimen/margin_small"
+                android:paddingTop="@dimen/margin_normal"
+                >
+                <Button
+                    android:id="@+id/form_dialog_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:background="@drawable/selector_botton"
+                    android:textColor="@android:color/white"
+                    android:text="باشه"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

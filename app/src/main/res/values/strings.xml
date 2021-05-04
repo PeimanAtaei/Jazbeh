@@ -1,0 +1,209 @@
+<resources>
+    <string name="app_name">Jazbeh</string>
+
+    <string name="about_title1">آشنایی با محصولات جذبه</string>
+    <string name="about_title2" translatable="false">راهنمای استفاده از محصولات</string>
+    <string name="about_title3">درباره ما</string>
+
+    <string name="product_activity_label">لیست محصولات</string>
+
+    <string name="about_en_title1">Introduction To Jazbe Products</string>
+    <string name="about_en_title2">Product Use Guide</string>
+    <string name="about_en_title3">About Us</string>
+
+    <string name="about_t3_text1">جذبه اصطلاحی در وصف روحی و از مراتب طی طریف تصوف و عرفان ایرانی است ، به معنای کشیده شدن بنده به سوی خدا با عنایت الهی است که سبب می‌شود انسان بی واسطه کوشش و بدون دشواری طیِ منازل، ناگهان، به خداوند نزدیک شود.</string>
+    <string name="about_t3_text2">در اسناد موجود از شرح حال عرفا مانند کتاب تذکره الاولیا عطارنیشابوری نقل شده این حالت بسیار شبیه ذن مدیتیشن در عرفان شرق دور وهمان مفهومی است که امروزه در جهان به اجرای قانون جذب مشهور شده جذبه نزدیکترین راه علمی و عملی دستیابی به نیروی ذهن</string>
+    <string name="about_t3_text3">گروه تحقیقاتی جذبه فعالیت خود را در شبکه های مجازی از سال ۱۳۸۷ در فیس بوک،آغاز و همینک در تلگرام فعال است و همواره سعی داشته با ارائه جدید ترین و به روز ترین مطالب علمی در حوزه متافیزیک وعرفان خوانندگانش را به تفکر در هستی وا دارد تا با دیدن چالش ها به صورت علمی و عملی، از خرافات دور شده و رفته رفته به سمت رشد سطح آگاهی بشری پیش رویم.</string>
+    <string name="about_t3_text4">هدف جذبه آشنا کردن شما عزیزان با قانونی انتزاعی است ،به نام قانون جذب.</string>
+    <string name="about_t3_text5">قانونی که براساس آن ،هر آنچه در ذهن انسان تصور شود اعم از خوب یا بد، زشت یا زیبا در دنیای واقعی نمود خواهد یافت. سرعت و شدت به واقعیت پیوستن این تصویر ذهنی به شدت تمرکز روی آن موضوع و وضوح تصویر آن در ذهن بستگی دارد. در واقع خواسته‌هایی که تصور می‌شوند باید به گونه‌ای باشند که بتوان آنها را در ذهن حس و باور نمود. قانون جذب می‌گوید هر چه فکر کنی همان می‌شود</string>
+    <string name="about_t3_text6">در این راستا گروه تحقیقاتی جذبه برای بهره مندی شما عزیزان و دستیابی هرچه سریعتر به قانون جذب، خدماتی را ارائه میدهد:</string>
+    <string name="about_t3_text7">– مفتخریم برای نخستین بار تولید کننده ( موسیفی درمانی ) فایلهای صوتی تاثیر گذاری بر ذهن و مغز از طریق (( امواج بینورال – ایزوکرونیک- سابلمیینال ( به زبان فارسی ) و سلف هیپنوتیزم )) در ایران هستیم ا</string>
+    <string name="about_t3_text8">-مفتخریم برگزار کننده انواع کارگاه های عملی از قبیل کنترل ذهن_ارتباط موثر_شاد زیستن و.. …هستیم که جهت دستیابی عملی و سریع شما عزیزان به نیروی بیکران ذهن ارائه میشود..</string>
+    <string name="about_t3_text9">گروه تحقیقاتی جذبه امیدوار است با استفاده از این محصولات و کارگاه ها ،سد باورهای اشتباه گذشته را بشکنیم و وارد عرصه ی جدید از زندگی نوین شویم.</string>
+
+
+    <string name="about_t1_text1">تکنولوژی امواج بینورال می‌تواند به شما اجازه می دهد ذهن خود را متناسب با فعالیتی که برایتان اهمیت دارد و قصد انجام آن را دارید سازمان دهید با این تکنولوژی می توانید مستقیماً ً به وضعیت‌های سودمند مدیتیشن و ادراک توسعه‌یافته دست پیدا کنید و به شکلی ارادی مغز خود را  با فعالیت مورد نظرتان  هماهنگ نمایید .</string>
+    <string name="about_t1_text2">در این روش از امواج صوتی برای انتقال شنونده به فرکانس‌های برتر آگاهی استفاده می شود و حاصل آن ، قراردادن مغز در وضعیتهایی است که شکل آگاهی انسان دستخوش تحولات عمیقی در مغز  می شود.</string>
+    <string name="about_t1_text3"> ساز و کار دستیابی به امواج بینورال به این شکل است که سیکل‌های صوتی خالص و دقیق با فرکانس‌های متفاوت از طریق یک هدفون استریو به مغز می‌رسد و دو نیمکره مغزی در هماهنگی با یکدیگر عمل نموده و در حقیقت سیگنال‌های صوتی خارجی پس از مدت کوتاهی دیگر شنیده نمی‌شوند و آنچه توسط مغز درک می‌گردد یک سیگنال سوم مجازی به نام فرکانس بینورال است و در پی تولید ممتد موج بینورال در مغز سلول‌های مغزی به ترتیب در پاسخ به این فرکانس  و در هماهنگی کامل با یکدیگر مرتعش می‌شوند. بدین ترتیب اصوات هماهنگ‌کننده مغزی بدون تلاش زیاد فعالیت مغز را به‌سوی الگوهای بسیار ویژه، سازمان‌یافته و منسجمی هدایت می‌کنند که این امر باعث دسترسی به وضعیت‌های جالب ‌توجه آگاهی توسعه‌یافته می‌شود.</string>
+    <string name="about_t1_text4">کاری که پیشتر با سالها ریاضت و طی طریق میسر می شد امروزه تنها با مدت کوتاهی گوش کردن به یک صدای استریو بینورال ممکن  شده است.</string>
+    <string name="about_t1_text5">کارکرد امواج بینورال روی مغز بسیار شبیه دارو است و امید می رود بزودی جایگزین بسیاری از داروهای رایج در جهان باشند. از این روی که این فایلها بر عملکرد مرکز فرماندهی مغز تاثیر می گذارد و  تاثیری شبیه داروها بر بدن شما دارند باید توجه کنید همانطور که مصرف خودسر دارو ها می تواند خطرناک باشد توصیه می شود این فایلها را تنها از منابع مطمئن دریافت نمایید.</string>
+    <string name="about_t1_text6"> همچنین ممکن است استفاده یک فایل بینورال که برای عموم مردم هیچ خطری نداشته باشد برای یک فرد خاص خطر مرگ در پی داشته باشد لذا حتما با گرفتن تایید از منبع مذکور از اصالت آنها اطمینان حاصل فرمایید زیرا ممکن است یک فایل رایگان از یک سایت همگانی برخلاف نامش تاثیر مخربی روی مغزتان داشته باشد.</string>
+    <string name="about_t1_text7">استفاده نامناسب از فایلها یا تجویز آن توسط افراد غیر متخصص ممکن است خطرات جبران ناپذیر جانی در پی داشته باشد.</string>
+    <string name="about_t1_text8">همچنین دقت کنید استفاده از هر فایل برای هر شخص می تواند متفاوت باشد لذا حتما قبل از استفاده از هر فایل دستورالعمل همراه آنرا که توسط سایت معتبر ارائه می شود را مطالعه بفرمایید و نکات مطروحه را مورد توجه قرار دهید.</string>
+    <string name="about_t1_text9">جذبه اولین و تنها تولید کننده فایلهای بینورال، سابلیمینال اتو هیپنوتیزم    در ایران  از شما دعوت می کند از محصولات تولید شده بازدید فرمایید.</string>
+
+    <string name="about_t2_text1">روش استفاده از امواج بینورال</string>
+    <string name="about_t2_text2"> برخلاف توضیح علمی و فنی امواج بینورال که همانند توضیح تکنولوژی استفاده شده در موبایل یا تلوزیون خیلی ساده نیست، استفاده از امواج بینورال بسیار ساده و دریافت تاثیری که این امواج روی مغز ما دارند کاملا محسوس است .</string>
+    <string name="about_t2_text3"> تنها ابزار لازم برای استفاده از این تکنولوژی  یک فایل مخصوص بینورال، یک دستگاه پلیر موزیک و  یک هدفون استریو (دوگوشی) می باشد.</string>
+    <string name="about_t2_text4"> درواقع اگر یک یک گوشی موبایل و هندزفری داشته باشید  آماده اید تا فایل بینورال دلخواتان را  از طریق موبایل و با هندز فری مانند یک موزیک ساده گوش کنید.</string>
+    <string name="about_t2_text5"> بقیه کارها را تا رسیدن به وضعیت مطلوب به عهده فایل بگذارید. خیلی زود خودتان را در وضعیت مطلوب برای موقعیت مورد نظر خود خودتان خواهید یافت. </string>
+    <string name="about_t2_text6">هرچند می توانید هنگام استفاده از امواج بینورال به کارهای دیگری هم بپردازید لیکن بیشترین تاثیر را زمانی احساس خواهید کرد که هنگام گوش دادن به امواج بینورال به کار دیگری مشغول نباشید و تمام توجه خود را به گوش دادن اختصاص دهید. </string>
+    <string name="about_t2_text7">مثلا اگر مدتهاست به دلیل مشکلات زندگی خواب عمیقی نداشته اید با گوش دادن به فایل مخصوص خواب عمیق در یک ساعت  خوابی را تجربه کنید که آرزویش را دارید و یا اگر مدتهاست از ته دل نخندیده اید با گوش دادن به فایل مخصوص از ته دل بخندید و شادمانی را احساس کنید و همچنین با استفاده از فایل مخصوص هر احساسی را که دوست دارید در خود پدید بیاورید و از خود رضایت داشته باشید.</string>
+
+    <string name="hint_prompt">Speak an item name or number</string>
+
+    <string name="search_hint">جستجو کنید&#8230;</string>
+    <string name="navigation_wallet_balance">اعتبار شما : 0</string>
+    <string name="wallet_charge_1">25,000</string>
+    <string name="wallet_charge_2">50,000</string>
+    <string name="wallet_charge_3">100,000</string>
+    <string name="wallet_charge_title">شارژ</string>
+    <string name="invitation_code_save_title">ذخیره</string>
+    <string name="invitation_code_message_title">در صورت نداشتن کد معرف , کد جذبه را وارد نمایید (کد جذبه : 20000)</string>
+
+    <string name="activity_login_title">"ساخت حساب کاربری جدید\nاطلاعات خود را وارد نمایید"</string>
+    <string name="activity_login_title2">"ورود به حساب کاربری\nاطلاعات خود را وارد نمایید"</string>
+    <string name="activity_login_forget_password">"رمز خود را فراموش کرده اید ؟"</string>
+    <string name="activity_login_new_account">"ساخت حساب کاربری جدید"</string>
+    <string name="activity_support_account">"ارتباط با پشتیبانی"</string>
+    <string name="activity_login_has_account">"قبلا حساب کاربری ساخته اید ؟ برای ورود اینجا کلیک کنید"</string>
+    <string name="activity_login_hit_password">"رمز عبور"</string>
+    <string name="activity_login_hit_username">"شماره موبایل"</string>
+    <string name="activity_login_next_btn">"بعدی"</string>
+
+    <string name="activity_course_buy_btn">"شروع دوره"</string>
+    <string name="activity_test_start_btn">"شروع آزمون"</string>
+    <string name="activity_test_finish_btn">"اتمام آزمون"</string>
+    <string name="activity_course_reserve_btn">"این دوره خریداری شده است"</string>
+
+    <string name="activity_forget_title1">"برای بازیابی رمز عبور ابتدا شماره موبایل خود را وارد نمایید تا کد تایید برای شما پیامک شود"</string>
+    <string name="activity_forget_title2">"کد پیامک شده به شماره خود را وارد نمایید"</string>
+    <string name="activity_forget_title3">"رمز عبور جدید را وارد نمایید"</string>
+    <string name="activity_forget_title4">"ابتدا رمز عبور فعلی و سپس رمز عبور جدید را وارد نمایید"</string>
+    <string name="activity_forget_phone">"شماره موبایل"</string>
+    <string name="activity_forget_code">"کد تایید"</string>
+    <string name="activity_current_password">"رمز عبور فعلی"</string>
+    <string name="activity_forget_password">"رمز عبور جدید"</string>
+    <string name="activity_forget_repeat_password">"تکرار رمز عبور جدید"</string>
+
+    <string name="activity_verify_next_btn">"ورود"</string>
+    <string name="activity_verify_title">"کد پیامک شده به شماره خود را وارد نمایید"</string>
+
+    <string name="activity_dashboard_popular_first_title">"کسب ثروت"</string>
+    <string name="activity_dashboard_popular_first_detail1">"تعداد جلسات : 11"</string>
+    <string name="activity_dashboard_popular_first_detail2">"مدرس : دکتر ناصری"</string>
+    <string name="activity_dashboard_popular_first_detail3">"طول دوره : 3 ماه"</string>
+    <string name="activity_dashboard_popular_second_title">"جنسی و زناشویی"</string>
+    <string name="activity_dashboard_popular_second_detail1">"تعداد جلسات : 11"</string>
+    <string name="activity_dashboard_popular_second_detail2">"مدرس : دکتر ناصری"</string>
+    <string name="activity_dashboard_popular_second_detail3">"طول دوره : 2 ماه"</string>
+    <string name="activity_dashboard_popular_third_title">"موفقیت"</string>
+    <string name="activity_dashboard_popular_third_detail1">"تعداد جلسات : 1"</string>
+    <string name="activity_dashboard_popular_third_detail2">"مدرس : دکتر ناصری"</string>
+    <string name="activity_dashboard_popular_third_detail3">"طول دوره : 1 هفته"</string>
+    <string name="activity_dashboard_popular_fourth_title">"زیبایی و جوانی"</string>
+    <string name="activity_dashboard_popular_fourth_detail1">"تعداد جلسات : 1"</string>
+    <string name="activity_dashboard_popular_fourth_detail2">"مدرس : دکتر ناصری"</string>
+    <string name="activity_dashboard_popular_fourth_detail3">"طول دوره : 1 هفته"</string>
+    <string name="activity_dashboard_popular_fifth_title">"فراگیری زبان"</string>
+    <string name="activity_dashboard_popular_fifth_detail1">"تعداد جلسات : 4"</string>
+    <string name="activity_dashboard_popular_fifth_detail2">"مدرس : دکتر ناصری"</string>
+    <string name="activity_dashboard_popular_fifth_detail3">"طول دوره : 1 ماه"</string>
+
+    <string name="activity_dashboard_category_label">"دسته بندی موسیقی های بینورال"</string>
+    <string name="activity_dashboard_category_pro1_title">"سلامت جسمانی"</string>
+    <string name="activity_dashboard_category_pro1_detail">"تقویت بدن و افزایش سطح سلامت"</string>
+    <string name="activity_dashboard_category_pro2_title">"ورزش"</string>
+    <string name="activity_dashboard_category_pro2_detail">"افزایش تحرک و سوخت و ساز بدن"</string>
+    <string name="activity_dashboard_category_pro3_title">"تغذیه"</string>
+    <string name="activity_dashboard_category_pro3_detail">"مدیریت تغذیه و افزایش تناسب اندام"</string>
+    <string name="activity_dashboard_category_pro4_title">"سلامت روان"</string>
+    <string name="activity_dashboard_category_pro4_detail">"کنترل و بهبود شرایط روحی و روانی"</string>
+    <string name="activity_dashboard_category_pro5_title">"مدیریت ذهن"</string>
+    <string name="activity_dashboard_category_pro5_detail">"افزایش مدیریت و کنترل ذهن و افکار"</string>
+    <string name="activity_dashboard_category_pro6_title">"خود شکوفایی"</string>
+    <string name="activity_dashboard_category_pro6_detail">"انتخاب مسیر و حرکت به سمت موفقیت"</string>
+    <string name="activity_dashboard_category_pro7_title">"فنون یادگیری"</string>
+    <string name="activity_dashboard_category_pro7_detail">"تقویت قدرت یادگیری مطالب مختلف"</string>
+    <string name="activity_dashboard_category_pro8_title">"هنر"</string>
+    <string name="activity_dashboard_category_pro8_detail">"درک عمیق ابعاد مختلف هنر"</string>
+    <string name="activity_dashboard_category_pro9_title">"راهنمای انتخاب"</string>
+    <string name="activity_dashboard_category_pro9_detail">"راهنمایی های لازم برای انتخاب بهتر"</string>
+    <string name="activity_dashboard_category_pro10_title">"متافیزیک"</string>
+    <string name="activity_dashboard_category_pro10_detail">"متافیزیک و مسائل ماوراالطبیعه"</string>
+    <string name="activity_dashboard_category_pro11_title">"هدیه"</string>
+    <string name="activity_dashboard_category_pro11_detail">"هدایای جذبه برای کاربران عزیز"</string>
+    <string name="activity_dashboard_category_pro12_title">"کارگاه مجازی"</string>
+    <string name="activity_dashboard_category_pro12_detail">"کارگاه های مجازی و انلاین جذبه"</string>
+    <string name="activity_dashboard_category_pro13_title">"کنترل افکار"</string>
+    <string name="activity_dashboard_category_pro13_detail">"مدیریت و بهبود قدرت ذهن"</string>
+    <string name="activity_dashboard_category_pro14_title">"آموزش"</string>
+    <string name="activity_dashboard_category_pro14_detail">"کتاب ، مقاله و پادکست های آموزشی"</string>
+
+
+    <string name="activity_profile_update_password_save_btn">"ذخیره"</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="delegate_form_title">"اطلاعات نماینده"</string>
+    <string name="delegate_form_explain">"دوست عزیز در صورتی که تمایل به مشارکت در فروش محصولات جذبه و سهیم شدن در سود فروش این محصولات با موسسه جذبه دارید قبل از پر کردن این اطلاعات قوانین مشارکت در فروش جذبه که در انتهای صفحه قرار دارد را مطالعه و سپس اطلاعات خود را برای ما ارسال نمایید."</string>
+    <string name="delegate_form_name_hint">"نام و نام خانوادگی"</string>
+    <string name="delegate_form_city_hint">"نام شهر"</string>
+    <string name="delegate_form_education_hint">"تحصیلات"</string>
+    <string name="delegate_form_card_hint">"شماره کارت بانکی (به نام خود)"</string>
+    <string name="delegate_form_channel_hint">"نحوه همکاری"</string>
+    <string name="delegate_form_rules_btn">"قوانین مشارکت در فروش"</string>
+    <string name="delegate_form_send_btn">"ارسال اطلاعات"</string>
+    <string name="delegate_info_send_btn">"اصلاح اطلاعات"</string>
+
+    <string name="title_activity_delegate">DelegateActivity</string>
+    <string name="title_balance">"داشبورد"</string>
+    <string name="title_sell">"فروش"</string>
+    <string name="title_information">"اطلاعات نماینده"</string>
+
+    <string name="delegate_form_rules_txt1">"سیستم  همکاری در فروش ، بنا بر سیاست هایی که در پیش می گیرند، بستری را برای شما فراهم می سازند تا با فروش محصولات جذبه، به کسب درآمد از اینترنت بپردازید."</string>
+    <string name="delegate_form_rules_txt2">"در این صفحه قوانین و شرایط همکاری در فروش قابل مشاهده است. همه افرادی که در بخش همکاری در فروش و بازاریابی  جذبه  ثبت‌نام می‌کنند موظف هستند از این قوانین پیروی ‌نمایند."</string>
+    <string name="delegate_form_rules_txt3">"ارسال درخواست فعال شدن پنل مشارکت در فروش به معنی پذیرش تمامی این موارد می باشد."</string>
+    <string name="delegate_form_rules_txt4">"۱- روند کار:"</string>
+    <string name="delegate_form_rules_txt5">همکاران گرامی با اپلیکیشنی که در اختیارشان قرار داده می‌شوند محصولات موجود در فروشگاه جذبه  را در فضای مجازی به دیگران معرفی می‌نمایند و بابت هر فروش که از طریق کد معرف آن ها انجام می‌گیرد 30 درصد از قیمت محصول به عنوان پورسانت به پنل‌شان اضافه می‌گردد."</string>
+    <string name="delegate_form_rules_txt6">"معرفی محصولات به دیگران، از طریق کد اختصاصی است که در پنل همکاری در فروش به شما داده می شود. زمانی که بطور مثال خانم نیازی  به عنوان همکار فروش جذبه ،کد معرف خود را که از اپ گرفتند، برای اشخاص دیگر ارسال می‌کند یا در سایت، بلاگ، کانال و یا گروه قرار می‌دهد و شخص بعد از نصب و واردشدن به اپلیکیشن کد معرف خانم نیازی را   وارد  اپ می‌کند .اپلیکیشن به طور خودکار تشخیص می‌دهد که این بازدیدکننده از لینک خانم نیازی  وارد  اپ شده و خریدار هر خریدی انجام دهد، پورسانت آن به حساب کاربری خانم نیازی  اضافه می‌شود که قابل واریز به حساب بانکی است."</string>
+    <string name="delegate_form_rules_txt7">"۲- سلب مسئولیت‌:"</string>
+    <string name="delegate_form_rules_txt8">"با عضویت در بخش همکاری در فروش  جذبه  ، شما به استخدام این موسسه درنمی‌آیید. هیچ قراردادی رسمی بین شما و سایت بسته نمی‌شود و شما نماینده فروش، نماینده شرکت یا بازاریاب رسمی هیچ شرکتی نخواهید بود."</string>
+    <string name="delegate_form_rules_txt9">"۳-موارد ممنوع:"</string>
+    <string name="delegate_form_rules_txt10">"-استفاده از اسپم و تبلیغات ناخواسته توسط  همکار در فروش، به طوری که باعث آزار مخاطب شود"</string>
+    <string name="delegate_form_rules_txt11">"-دادن اطلاعات غیرواقعی، نادرست به هدف گمراه کردن خریدار"</string>
+    <string name="delegate_form_rules_txt12">"-ترغیب خریدار به خرید، به هر شکلی که فریب محسوب شود"</string>
+    <string name="delegate_form_rules_txt13">"-دریافت مبلغ از خریدار به هر عنوان"</string>
+    <string name="delegate_form_rules_txt14">"-مدعی شدن به عنوان عوامل جذبه"</string>
+    <string name="delegate_form_rules_txt15">"۴-مالی:"</string>
+    <string name="delegate_form_rules_txt16">"همه تراکنش‌ها در حساب کاربری همکار قابل رویت خواهد بود"</string>
+    <string name="delegate_form_rules_txt17">"پورسانت  همکار  فقط به سفارشاتی تعلق می‌گیرد که وجه آن از خریدار دریافت شده باشد (سفارش نهایی شده باشد)"</string>
+    <string name="delegate_form_rules_txt18">"پرداخت پورسانت همکاران، با ثبت درخواست تسویه حساب در پنل همکاری در فروش انجام می گیرد ولی واریز پورسانت به حساب همکاران تنها در هفته اول هر ماه انجام می شود"</string>
+    <string name="delegate_form_rules_txt19">"درخواست واریز پورسانت تنها زمانی مقدور خواهد بود که حداقل موجودی پورسانت شما پنجاه هزار تومان باشد"</string>
+    <string name="delegate_form_rules_txt20">"همکار در فروش می‌بایست یک کارت بانکی معتبر به نام خود جهت واریز پورسانت در پنل خود ثبت نماید. مسئولیت اشتباه در وارد کردن مشخصات حساب برعهده بازاریاب است."</string>
+    <string name="delegate_form_rules_txt21">"بعد از هر فروش با کد معرف شما کاربر ده درصد تخفیف دریافت می نماید تا تشویق به وارد کردن کد معرف گردد . این درصد از سهم موسسه کسر می شود نه بازاریاب . سهم بازاریاب سی درصد از مبلغ فروش هر محصول می باشد"</string>
+    <string name="delegate_form_rules_txt22">"در فرم اطلاعات نماینده و در بخش نحوه همکاری در صورتی که کانال تلگرامی و یا پیج اینستاگرام با مخاطب بالا دارید اطلاعات کامل راجب نحوه تبلیغ محصولات و ای دی مربوط به کانال و پیج خود را نیز ذکر نمایید"</string>
+    <string name="delegate_form_rules_txt23">"عدم رعایت قوانین فوق می‌تواند باعث مسدود شدن، حذف کامل یا جریمه  همکار شود"</string>
+    <string name="delegate_form_rules_txt24">"این قوانین ممکن است در آینده تغییر کند، عضویت شما در بخش  همکاری در فروش سایت جذبه  به معنای قبول کلیه قوانین فوق است"</string>
+    <string name="delegate_form_rules_txt25">"به امید همکاری گرم با شما دوست عزیز"</string>
+
+
+    <string name="sharing_explain1">"شما می توانید با دعوت از دوستانتان برای استفاده از این نرم افزار کیف پول خودتان را به صورت رایگان شارژ نمایید"</string>
+    <string name="sharing_explain2">"لینک دعوتتان را با دوستانتان به اشتراک بگذارید تا با ثبت نام و نصب اپلیکیشن جذبه 15 هزار تومان شارژ رایگان دریافت نمایند. کیف پول شما نیز به تعداد دوستانی که به نرم افزار جذبه ملحق نموده اید 15 هزار تومان شارژ می گردد"</string>
+    <string name="sharing_explain3">"مراحل دعوت دوستان"</string>
+    <string name="sharing_explain4">ابتدا لینک زیر را کپی کرده و یا از طریق لیست نرم افزار های زیر به دوستانتان ارسال نمایید</string>
+    <string name="sharing_explain5">"دوستان شما بعد از کلیک بر روی لینک شما وارد وب سایت جذبه شده و شماره تلفن خود را ثبت می نمایند"</string>
+    <string name="sharing_explain6">" بعد از ثبت شماره تلفن از طریق لینک دانلود ، نرم افزار را نصب کرده و وارد اپلیکیشن می شوند . بعد از ورود به نرم افزار شما و دوستانتان 15 هزار تومان شارژ رایگان دریافت می نمایید"</string>
+    <string name="sharing_sample_link">"سلام دوست من/nبا این لینک تو سایت جذبه ثبت نام و اپ جذبه رو نصب کن تا 15 هزار تومان شارژ رایگان برای خرید محصولات دریافت کنی/nبیش از 500 محصول شکفت انگیز تو این نرم افزار منتظر جفتمونه/n"</string>
+    <string name="title_activity_test_list">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="title_activity_tab_shop">TabShopActivity</string>
+    <string name="tab_text_1">"موسیقی"</string>
+    <string name="tab_text_2">"ویدئو"</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_tab_favorite">TabFavoriteActivity</string>
+
+</resources>

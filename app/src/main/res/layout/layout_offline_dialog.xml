@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_fileName="no-connection.json"
+                />
+
+            <TextView
+                android:id="@+id/support_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اتصال خود به اینترنت را بررسی کرده و دوباره تلاش نمایید"
+                android:textColor="@color/text_color2"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_big"
+                android:layout_marginLeft="@dimen/margin_big"
+                android:layout_marginRight="@dimen/margin_big"
+                />
+
+            <Button
+                android:id="@+id/dialog_offline_btn"
+                android:layout_below="@id/balancesButtonGroup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_botton"
+                android:layout_marginLeft="@dimen/margin_normal"
+                android:layout_marginRight="@dimen/margin_normal"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:textColor="@android:color/white"
+                android:text="تلاش مجدد"
+                android:textSize="@dimen/text_size_normal"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

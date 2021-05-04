@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/invitationCodeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_larg"
+                android:text="@string/invitation_code_message_title"
+                android:textColor="@color/text_color"
+                android:padding="@dimen/margin_small"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_larg" />
+
+            <EditText
+                android:id="@+id/invitationCodeEditText"
+                android:layout_below="@id/invitationCodeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:textColor="@color/text_color2"
+                android:textColorHint="@color/hint_color"
+                android:textSize="15sp"
+                android:maxLength="5"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/selector_input"
+                android:gravity="center"
+                android:hint="کد معرف خود را وارد کنید"
+                android:inputType="number"
+                />
+
+
+
+            <Button
+                android:id="@+id/saveInvitationCodeButton"
+                android:layout_below="@id/invitationCodeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_botton"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textColor="@android:color/white"
+                android:text="@string/invitation_code_save_title"
+                android:textSize="@dimen/text_size_normal"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

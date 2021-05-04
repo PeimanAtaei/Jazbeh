@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textDirection="rtl"
+    android:layoutDirection="rtl"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp">
+        <LinearLayout
+            android:id="@+id/dashboard_popular_box"
+            android:orientation="vertical"
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:background="@drawable/selector_popular"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="دوره"
+                    android:paddingTop="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/text_size_small"
+                    />
+                <TextView
+                    android:id="@+id/dashboard_popular_first_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_dashboard_popular_first_title"
+                    android:paddingTop="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_big"
+                    />
+
+                <TextView
+                    android:id="@+id/dashboard_popular_first_detail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_dashboard_popular_first_detail1"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/text_size_small"
+                    android:drawableRight="@drawable/ic_done"
+                    android:drawablePadding="@dimen/margin_small"
+                    />
+                <TextView
+                    android:id="@+id/dashboard_popular_first_detail2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_dashboard_popular_first_detail2"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/text_size_small"
+                    android:drawableRight="@drawable/ic_done"
+                    android:drawablePadding="@dimen/margin_small"
+                    />
+                <TextView
+                    android:id="@+id/dashboard_popular_first_detail3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_dashboard_popular_first_detail3"
+                    android:paddingLeft="@dimen/margin_normal"
+                    android:paddingRight="@dimen/margin_normal"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/text_size_small"
+                    android:drawableRight="@drawable/ic_done"
+                    android:drawablePadding="@dimen/margin_small"
+                    />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/dashboard_popular_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/money"
+                android:adjustViewBounds="true"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

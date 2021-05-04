@@ -1,0 +1,11 @@
+-dontwarn com.android.volley.**
+-dontwarn com.android.volley.error.**
+-keep class com.android.volley.** { *; }
+-keep class com.android.volley.toolbox.** { *; }
+-keep class com.android.volley.Response$* { *; }
+-keep class com.android.volley.Request$* { *; }
+-keep class com.android.volley.RequestQueue$* { *; }
+-keep class com.android.volley.toolbox.HurlStack$* { *; }
+-keep class com.android.volley.toolbox.ImageLoader$* { *; }
+-keep interface com.android.volley.** { *; }
+-keep class org.apache.commons.logging.*

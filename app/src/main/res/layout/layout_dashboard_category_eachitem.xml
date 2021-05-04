@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:textDirection="rtl"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:elevation="15dp"
+        >
+        <LinearLayout
+            android:id="@+id/dashboard_category_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center|right"
+                >
+
+                <TextView
+                    android:id="@+id/dashboard_category_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_dashboard_category_pro1_title"
+                    android:textSize="@dimen/text_size_big"
+                    android:textColor="@color/text_color"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+
+                    />
+                <TextView
+                    android:id="@+id/dashboard_category_brief"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_dashboard_category_pro1_detail"
+                    android:textSize="@dimen/text_size_normal"
+                    android:textColor="@color/text_color2"
+                    android:layout_marginRight="@dimen/margin_normal"
+                    android:layout_marginLeft="@dimen/margin_normal"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/dashboard_category_image"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:src="@drawable/health"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:adjustViewBounds="true"
+                />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
